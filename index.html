@@ -1,441 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-
-	<title>Home</title>
-
-  	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-  	<meta name="description" content="">
-
-	<!-- stylesheets css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
-  	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-  	<link rel="stylesheet" href="css/nivo-lightbox.css">
-  	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-  	<link rel="stylesheet" href="css/hover-min.css">
-    <link rel="stylesheet" href="css/contact-input-style.css">
-
-  	
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'>--->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>	
 </head>
 <body>
- <div class="loader loader-bg">
-        <div class="loader-inner ball-pulse-rise">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+  <div class="header" id="home">
+  	  <div class="header_top">
+	   <div class="wrap">
+		 	     <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="" /></a>
+					</div>	
+						<div class="menu">
+						    <ul>
+						    	<li><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#features" class="scroll">Features</a></li>
+								<li><a class="popup-with-zoom-anim" href="#small-dialog">Pricing</a></li>
+								<li><a href="#dashboard" class="scroll">Examples</a></li>
+								<li><a href="#customers" class="scroll">Support</a></li>				    
+								<li class="login" >
+									<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+						                <div id="loginBox">                
+						                    <form id="loginForm">
+						                        <fieldset id="body">
+						                            <fieldset>
+						                                <label for="email">Email Address</label>
+						                                <input type="text" name="email" id="email">
+						                            </fieldset>
+						                            <fieldset>
+						                                <label for="password">Password</label>
+						                                <input type="password" name="password" id="password">
+						                            </fieldset>
+						                            <input type="submit" id="login" value="Sign in">
+						                            <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+						                        </fieldset>
+						                        <span><a href="#">Forgot your password?</a></span>
+						                    </form>
+						                </div>
+						               </div>
+								   </li>
+								<div class="clear"></div>
+							</ul>
+						</div>							
+	    		 <div class="clear"></div>
+	        </div>
+	    </div>
+	 </div>			      	
+     <div class="main">
+	 	<div class="content">	
+	 		 <div class="content_top">  
+	 		     <div class="wrap">                                  		
+            	   <div class="banner_desc">
+            		<h1>Selling online <span>made easy</span></h1>  
+            		<h3>Ascend provides everything you need to<br /> start a successfull online store.</h3>
+            		<a class="play_icon fancybox-media" href="http://vimeo.com/33790882"><img src="images/play-icon.png" alt="" /></a>
+            		<h3>Start your free <span>30-days trail</span> today!</h3>
+            		<p>No credit card required.</p>
+            		 <div class="sign_up">				  	
+					 <form>
+					  		<input type="text" value="E-mail address " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}"> 
+					 		<input type="submit" value="Sign Up">
+					  </form>
+				    </div>
+                </div>  
+                     <div class="ipad">
+            		     <img src="images/ipad.png" alt="" />
+            	     </div>
+             <div class="clear"></div>
         </div>
-      </div>
-
-<!------------Static navbar ------------>
-    <nav class="navbar navbar-default top-bar affix" data-spy="affix" data-offset-top="250" >
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Voyage</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#banner">Home</a></li>
-              <li><a href="#todo">To-Do List</a></li>
-              <li><a href="#video-sec">Video</a></li>
-              <li><a href="#location">Top Locations</a></li>
-              <li><a href="#hotels">Hotels</a></li>
-              <li><a href="#contact-sec">Stay in Touch</a></li>
-           
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-
-    
-<!------------ Home Banner ------------>
-<section id="banner" class="parallax">
-  <div class="gradient-overlay"></div>
-    <div class="container">
-      <div class="row">
-
-          <div class="col-md-offset-2 col-md-8 col-sm-12">
-              <h1 class="wow fadeInUp" data-wow-delay="1s">Dream Vacations</h1>
-              <p class="wow fadeInUp" data-wow-delay="1s">The world is a book, and those who do not travel read only a page.<br>
-                  <small>For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.</small>
-                  </p>
-              <a href="#todo" class="wow fadeInUp btn btn-transparent-white btn-capsul btn-lg smoothScroll" data-wow-delay="1.3s">Discover Now</a>
-          </div>
-
-      </div>
-    </div>
-</section>
-
-
-<!------------ todo Section ------------>
-<section id="todo" class="parallax">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
-          <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-            <h2>Check your To-Do List<small>Preparing for a Road Trip Checklist</small></h2>
-          </div>
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-             <span><img class="img-responsive" src="images/todo-icon-01.png" /></span>
-          </div>
-          <h3>Visa/Papers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-            <span><img class="img-responsive" src="images/todo-icon-02.png" /></span>
-          </div>
-          <h3>Hotel Booking</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-            <span><img class="img-responsive" src="images/todo-icon-03.png" /></span>
-          </div>
-           <h3>Luxury</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-        
-        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-             <span><img class="img-responsive" src="images/todo-icon-04.png" /></span>
-          </div>
-          <h3>Shopping</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-            <span><img class="img-responsive" src="images/todo-icon-05.png" /></span>
-          </div>
-          <h3>Sport</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-        <div class="feature-thumb">
-          <div class="feature-icon">
-            <span><img class="img-responsive" src="images/todo-icon-06.png" /></span>
-          </div>
-           <h3>Support</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!------------ Video section ------------>
-<section id="video-sec" class="parallax">
-  <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-
-          <div class="col-md-offset-2 col-md-8 col-sm-12">
-              <h2 class="wow fadeInUp" data-wow-delay="0.5s">Watch the video<small>All journeys have secret destinations of which the traveler is unaware.</small></h2>
-              <a class="popup-youtube" href="" ><i class="fa fa-play"></i></a>
-              <small><em>Video by: Paris Vacation Travel Guide | Expedia</em></small>
-          </div>
-
-      </div>
-    </div>
-</section>
-<!------------ Menu section ------------>
-<section id="location" class="parallax">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-         <div class="wow fadeInUp section-title" data-wow-delay="1s">
-            <h2>Top Locations <small>Every day is a journey, and the journey itself is home.</small></h2>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="media wow fadeInUp" data-wow-delay="0.5s">
-          <div class="media-object pull-left">
-            <img src="images/location-01.jpg" class="img-responsive" alt="Food Menu">
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">London</h3>
-            <p>At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations.</p>
-              <a href="#" class="btn btn-capsul btn-transparent-prime">Explore Now</a>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp" data-wow-delay="0.9s">
-          <div class="media-object pull-left">
-            <img src="images/location-02.jpg" class="img-responsive" alt="Food Menu">
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Paris</h3>
-            <p>Eiffel Tower and Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré</p>
-             <a href="#" class="btn btn-capsul btn-transparent-prime">Explore Now</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="media wow fadeInUp" data-wow-delay="0.5s">
-          <div class="media-object pull-left">
-            <img src="images/location-03.jpg" class="img-responsive" alt="Food Menu">
-           </div>
-          <div class="media-body">
-            <h3 class="media-heading">New York</h3>
-            <p>At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers</p>
-              <a href="#" class="btn btn-capsul btn-transparent-prime">Explore Now</a>
-          </div>
-        </div>
-
-        <div class="media wow fadeInUp" data-wow-delay="0.9s">
-          <div class="media-object pull-left">
-            <img src="images/location-04.jpg" class="img-responsive" alt="Food Menu">
-          </div>
-          <div class="media-body">
-            <h3 class="media-heading">Hong Kong</h3>
-            <p> Hong Kong is also a major shopping destination, famed for bespoke tailors and Temple Street Night Market.</p>
-              <a href="#" class="btn btn-capsul btn-transparent-prime">Explore Now</a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!------------ Gallery section ------------>
-<section id="hotels" class="parallax">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-12">
-
-       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
-         <div class="wow fadeInUp section-title" data-wow-delay="1s">
-            <h2>Best Hotels out there<small>The great advantage of a hotel is that it is a refuge from home life.</small></h2>
-        </div>
-      </div>
-        
-          <!-- iso section -->
-          <div class="iso-section wow fadeInUp text-center" data-wow-delay="0.5">
-
-            		<ul class="filter-wrapper clearfix">
-                        <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".london">London</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".paris">Paris</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".ny">New York</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".hn">Hong Kong</a></li>
-                    </ul>
-
-                    <!-- iso box section -->
-                    <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
-                      <div class="iso-box-wrapper col4-iso-box">
-
-                        <div class="iso-box london paris ny col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-01.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-01.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name</h3>
-                        </div>
-
-                        <div class="iso-box london ny hn col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-02.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-02.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name Two</h3>
-                        </div>
-
-                        <div class="iso-box hn col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-03.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-03.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name Three</h3>
-                        </div>
-
-                        <div class="iso-box london col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-04.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-04.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name Four</h3>
-                        </div>
-
-                        <div class="iso-box ny col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-05.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-05.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name Five</h3>
-                        </div>
-
-                        <div class="iso-box paris lunch col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="images/hotel-06.jpg" data-lightbox-gallery="food-gallery">
-                              <img src="images/hotel-06.jpg" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                          <h3>Hotel Name Six</h3>
-                        </div>
-
-                       </div>
-                    </div>
-
-          </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!------------ Contact section ------------>
-<section id="contact-sec" class=" content">
-  <div class="overlay"></div>
-	<div class="container form-block">
-                <div class="row">
-                <div class="col-lg-12 text-center"><h2>Get in Touch<small>Stay in touch for more information</small></h2></div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-                <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Name</span>
-					</label>
-				</span>
-                </div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-                <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Phone</span>
-					</label>
-				</span>
-                </div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-                <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Email</span>
-					</label>
-				</span>
-                </div>
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <span class="t-area input-hoshi">
-                <textarea class="input_field input_field-hoshi" rows="1"></textarea>
-						<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Email</span>
-					</label>
-				</span>
-                <a href="#" class="btn btn-capsul btn-transparent-white">Submit</a>
-                </div>
-                
-                </div>
-                </div>
-</section>
-
-<!------------ Footer section ------------>
-<footer>
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-3">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
-            </div>
-        
-        </div>
-    
-    </footer>
-
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.backstretch.min.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/core.js"></script>
-
-
+     </div>
+           <div class="features" id="features">
+                 <div class="wrap">                             	
+                 		  <h2>Start accepting orders <span>today</span></h2>
+                 		    <h4>Setup a professional storefront within minutes</h4>
+                 		        <div class="features_grids">
+							     <div class="section group">
+									<div class="grid_1_of_4 images_1_of_4">
+										 <img src="images/beautyful-teplates.png" alt="" />
+										 <h3>Beautiful Templates</h3>
+										 <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt Lorem Ipsum available, in some form .</p>
+									</div>
+									<div class="grid_1_of_4 images_1_of_4">
+										 <img src="images/mobile.png" alt="" />
+										 <h3>Mobile Ready</h3>
+										 <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor velit esse cillum dolore eu fugiat nulla pariatur .</p>
+									</div>
+									<div class="grid_1_of_4 images_1_of_4">
+										 <img src="images/security.png" alt="" />
+										  <h3>Increased Security</h3>
+										  <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor sed do eiusmod tempor incididunt .</p>
+									</div>
+									<div class="grid_1_of_4 images_1_of_4">
+										 <img src="images/payment.png" alt="" />
+										  <h3>Payment Options</h3>
+										  <p>Lorem ipsum dolor sit amet, sed do velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									</div>
+					              </div>
+					              <div class="button"><a class="popup-with-zoom-anim" href="#small-dialog">See all features <img src="images/arrow.png" alt="" /></a>
+					              	
+					              	<div id="small-dialog" class="mfp-hide">
+					                           	    <div class="plans_table">
+  			 	
+								  			 	<table width="100%" cellspacing="0" class="compare_plan">
+												<thead>
+								   					<tr>
+								        				<th class="plans-list"><h3>Plan Features</h3></th>
+								        				<th class="plans-list"><h3>Basic</h3><h4>$5<small>/month</small></h4></th>
+								        				<th class="plans-list"><h3>Economy</h3><h4>$9<small>/month</small></h4></th>
+								    				</tr>
+												</thead>
+													<tfoot>
+									    			<tr>
+												        <td> </td>
+								        				<td class="order_now"><a href="#account" class="scroll"><button>Order Now</button></a></td>
+								        				<td class="order_now"><a href="#account" class="scroll"><button>Order Now</button></a></td>
+													</tr>
+													</tfoot>				
+								   				<tbody>
+								   					<tr>
+									        			<td class="plan_list_title">Web Space</td>
+												        <td class="price_body">Unlimited</td>
+												        <td class="price_body">Unlimited</td>
+									    			</tr>
+								    				<tr>
+								        				<td class="plan_list_title">Bandwidth</td>
+														<td class="price_body">Unlimited</td>
+										        		<td class="price_body">Unlimited</td>
+								    				</tr>
+								    				<tr>
+								        				<td class="plan_list_title">25 GB Storage</td>
+											    	    <td class="price_body"><img src="images/icon-remove.png" alt="img"></td>
+											        	<td class="price_body">Unlimited</td>
+													</tr>
+								    				<tr>
+											    	    <td class="plan_list_title">iPhone App</td>
+											        	<td class="price_body"><img src="images/icon-remove.png" alt="img"></td>
+												        <td class="price_body">Unlimited</td>
+								    				</tr>
+								    				<tr>
+								        				<td class="plan_list_title">Enhanced Security</td>
+									        			<td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+												        <td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+								    				</tr>
+									    			<tr>
+								    	    			<td class="plan_list_title">E-mail</td>
+								        				<td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+												        <td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+									    			</tr>
+								    				<tr>
+								        				<td class="plan_list_title">Wordpress Support</td>
+												        <td class="price_body"><img src="images/icon-remove.png" alt="img"></td>
+											    	    <td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+								    				</tr>
+								    				<tr>
+								        				<td class="plan_list_title">24/7 Support</td>
+								        				<td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+											        	<td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+								    				</tr>
+								    				<tr>
+								        				<td class="plan_list_title">Backups</td>
+												    	<td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+												        <td class="price_body"><img src="images/tickmark-icon.png" alt="img"></td>
+								    				</tr>
+								    				<tr>
+								        				<td class="plan_list_title">Dedicated IP</td>
+												        <td class="price_body">$2/mo</td>
+												        <td class="price_body">$2/mo</td>
+								    				</tr>
+												</tbody></table>  			 	
+  											 </div>
+												</div>
+											   <script>
+													$(document).ready(function() {
+														$('.popup-with-zoom-anim').magnificPopup({
+															type: 'inline',
+													
+															fixedContentPos: false,
+															fixedBgPos: true,
+													
+															overflowY: 'auto',
+													
+															closeBtnInside: true,
+															preloader: false,
+															
+															midClick: true,
+															removalDelay: 300,
+															mainClass: 'my-mfp-zoom-in'
+														});
+																					
+													});
+													</script>
+					              	
+					              </div>
+					        </div>
+						</div>
+           			</div>
+           			 
+           	  <div class="dashborder_img" id="dashboard">
+                   <div class="wrap">                             	
+                 		  <h2>Powerful new <span>dashboard</span></h2>
+                 		    <h4>Track and manage your budiness from anywhere</h4>
+                 		      <img src="images/dashboard.jpg" alt="" />  
+						</div>
+           			</div>
+                       
+          <div class="content_bottom" id="customers">
+              <div class="wrap">            
+                 		  <h2>Highest Customer <span>Satisfaction</span></h2>
+                 		    <h4>Our success is measured through the success of our customers.</h4>
+                 		        <div class="customers_grids">
+							       <div class="section group">
+									  <div class="grid_1_of_3 images_1_of_3">
+									  	 <div class="customer_desc">
+									  	 	<span class="quotes up"> </span><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p><span class="quotes down"> </span> 
+										   <span class="testimonial-arrow"> </span>
+										 </div> 
+										  <img src="images/customer-img1.jpg" alt="" />
+										  <h3><a href="#">Uku Mason</a></h3>
+										  <h5>Marketing Expert</h5>
+									</div>
+									<div class="grid_1_of_3 images_1_of_3">
+										<div class="customer_desc">
+									  	 	<span class="quotes up"> </span><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p><span class="quotes down"> </span>
+										  <span class="testimonial-arrow"> </span>
+										 </div> 
+										    <img src="images/customer-img2.jpg" alt="" />
+										    <h3><a href="#">Ro Kanth</a></h3>
+										  <h5>Photographer</h5>
+									</div>
+									<div class="grid_1_of_3 images_1_of_3">
+										 <div class="customer_desc">
+									  	 	<span class="quotes up"> </span><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p><span class="quotes down"> </span>
+										    <span class="testimonial-arrow"> </span>
+										 </div> 
+										    <img src="images/customer-img3.jpg" alt="" />
+										    <h3><a href="#">Anna Alexander</a></h3>
+										    <h5>Professional Model</h5>
+									</div>
+								</div>
+					        </div>
+           			  </div>             
+       			</div>
+     		</div>
+  		 </div>	
+   <div class="footer">
+   	 <div class="wrap">
+   	 <div class="section group example">
+				<div class="col_1_of_4 span_1_of_4 list">
+				   <h3>Overview</h3>
+				   <ul>
+				   	<li><a href="#">About Us</a></li>
+				   	<li><a href="#">Features</a></li>
+				   	<li><a href="#">Pricing</a></li>
+				   	<li><a href="#">Examples</a></li>
+				   	<li><a href="#">Careers</a></li>
+				   	<li><a href="#">Privacy Policy</a></li>
+				   	<li><a href="#">Terms of services</a></li>				   
+				   </ul>				   
+ 				</div>
+ 				<div class="col_1_of_4 span_1_of_4 list">
+				   <h3>Support</h3>
+				   <ul>
+				   	<li><a href="#">Support Portal</a></li>
+				   	<li><a href="#">Community Forum</a></li>
+				   	<li><a href="#">Tutorials</a></li>
+				   	<li><a href="#">Online Seminars</a></li>
+				   	<li><a href="#">Extensions</a></li>
+				   	<li><a href="#">API</a></li>				   
+				   </ul>				   
+ 				</div>
+				<div class="col_1_of_4 span_1_of_4 list">
+				   <h3>Partners</h3>
+				   <ul>
+				   	<li><a href="#">Paypal</a></li>
+				   	<li><a href="#">Visa</a></li>
+				   	<li><a href="#">Mastercard</a></li>
+				   	<li><a href="#">Amex</a></li>
+				   	<li><a href="#">Royal Bank</a></li>				   
+				   </ul>				   
+ 				</div>
+				<div class="col_1_of_4 span_1_of_4 list">
+				   <h3>Contact Us</h3>
+				   <ul>
+				   	<li><a href="#">1-888-125-0328</a></li>
+				   	<li><a href="#">Cantact@ascend.com</a></li>				   
+				   </ul>	
+				        <div class="social-icons">
+							<h3>Stay in touch</h3>
+					   		  <ul>
+							      <li><a href="#" target="_blank"> <img src="images/facebook.png" alt="" /> Facebook</a></li>
+							      <li class="twitter"><a href="#" target="_blank"> <img src="images/twitter.png" alt="" /> Twitter</a></li>
+							      <li class="googleplus"><a href="#" target="_blank"><img src="images/googleplus.png" alt="" />  Google+</a></li>
+							      <li class="pinterest"><a href="#" target="_blank"><img src="images/pinterest.png" alt="" /> Pinterest</a></li>
+							      <li class="likedin"><a href="#" target="_blank"><img src="images/likedin.png" alt="" /> Likedin</a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>			   
+ 				</div>
+				<div class="clear"></div>
+		    </div>
+		  </div> 
+       </div> 
+		     <div class="copy_right">
+		     	<div class="wrap">
+				    <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+		     	</div>
+		   	</div>		 		 
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
